@@ -23,6 +23,18 @@ button{
 	/*background color container main*/
 	--bg-main: hsl(226, 43%, 10%);
 	--bg-ct-perfil:  hsl(246, 80%, 60%);
+	--bg-sct-time: hsl(235, 46%, 20%);
+
+
+	/*/background color card/*/
+
+	--bg-card-1: hsl(15, 100%, 70%);
+	--bg-card-2: hsl(195, 74%, 62%);
+	--bg-card-3: hsl(348, 100%, 68%);
+	--bg-card-4: hsl(145, 58%, 55%);
+	--bg-card-5: hsl(264, 64%, 52%);
+	--bg-card-6: hsl(43, 84%, 65%);
+
 }
 
 /*/////// container main ////////*/
@@ -72,7 +84,7 @@ button{
 	}
 	/*/////// section time ////////*/
 	.sct-time{
-		background-color: hsl(235, 46%, 20%);
+		background-color: var(--bg-sct-time);
 		padding: 1.38rem 1.3rem 1.38rem 2rem;
 		border-radius: 1rem;
 		display: flex;
@@ -108,7 +120,7 @@ button{
 		background-image: url(images/icon-work.svg);
 		background-repeat: no-repeat;
 		background-position: 14.5rem -0.6rem ;
-		background-color: hsl(15, 100%, 70%);
+		background-color: var(--bg-card-1);
 		border-radius: 1rem;
 	}
 	
@@ -116,35 +128,35 @@ button{
 		background-image: url(images/icon-play.svg);
 		background-repeat: no-repeat;
 		background-position: 14.5rem -0.2rem ;
-		background-color: hsl(195, 74%, 62%);
+		background-color: var(--bg-card-2);
 		border-radius: 1rem;
 	}
 	.card-3{
 		background-image: url(images/icon-study.svg);
 		background-repeat: no-repeat;
 		background-position: 14.5rem -0.3rem ;
-		background-color: hsl(348, 100%, 68%);
+		background-color: var(--bg-card-3);
 		border-radius: 1rem;
 	}
 	.card-4{
 		background-image: url(images/icon-exercise.svg);
 		background-repeat: no-repeat;
 		background-position: 14.5rem -0.2rem ;
-		background-color: hsl(145, 58%, 55%);
+		background-color: var(--bg-card-4);
 		border-radius: 1rem;
 	}
 	.card-5{
 		background-image: url(images/icon-social.svg);
 		background-repeat: no-repeat;
 		background-position: 14.5rem -0.8rem ;
-		background-color: hsl(264, 64%, 52%);
+		background-color: var(--bg-card-5);
 		border-radius: 1rem;
 	}
 	.card-6{
 		background-image: url(images/icon-self-care.svg);
 		background-repeat: no-repeat;
 		background-position: 15.3rem -0.55rem ;
-		background-color: hsl(43, 84%, 65%);
+		background-color: var(--bg-card-6);
 		border-radius: 1rem;
 	}
 	.header-card{
