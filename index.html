@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--main-->
+  <div class="ct-main">
+    <!--container app-->
+    <div class="ct-app">
+      <!--container perfil--> 
+      <div class="ct-perfil">
+        <!--section user-->
+        <section class="sct-user">
+         <img class="img-user" src="images/image-jeremy.png" alt="image user">
+          <div class="info-user">
+           <span class="item-name">Report for</span>
+            <h1 class="name-user">Jeremy Robson</h1>
+          </div>
+        </section>
+        <!--section time user-->
+        <section class="sct-time">
+          <button onclick="timeDaily()" class="btn-time" id="b-daily">Daily</button>
+          <button onclick="timeWeekly()" class="btn-time" id="b-weekly">Weekly</button>
+          <button onclick="timeMonth()"class="btn-time" id="b-monthly">Monthly</button>
+        </section>  
+      </div>
+      <!--container dashboard-->
+      <div class="ct-panel">
+        <!--section card panel-->
+        <div class="card-1 card">
+          <!-- card banner-->
+          <section class="card-banner">
+           
+          </section>
+          <section class="info-card">
+            <div class="header-card">
+              <h2 class="title-card">Work</h2>
+              <button class="btn-card" id="btn-card-1">
+                <img class="icon-btn-card" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+              </button>
+            </div>
+            <div class="time-card">
+              <p id="time-work" class="time-today">5hrs</p>
+              <p class="last-time">Last Week - <span id="last-work">7hrs</span></p>
+            </div>
+          </section>
+        </div>
+        <div class="card-2 card">
+          <!-- card banner-->
+          <section class="card-banner">
+           
+          </section>
+          <section class="info-card">
+            <div class="header-card">
+              <h2 class="title-card">Play</h2>
+              <button class="btn-card" id="btn-card-2">
+                <img class="icon-btn-card" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+              </button>
+            </div>
+            <div class="time-card">
+              <p id="time-play" class="time-today">1hr</p>
+              <p class="last-time">Last Week - <span id="last-play">2hrs</span></p>
+            </div>
+          </section>
+        </div>
+        <div class="card-3 card">
+          <!-- card banner-->
+          <section class="card-banner">
+           
+          </section>
+          <section class="info-card">
+            <div class="header-card">
+              <h2 class="title-card">Study</h2>
+              <button class="btn-card" id="btn-card-3">
+                <img class="icon-btn-card" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+              </button>
+            </div>
+            <div class="time-card">
+              <p id="time-study" class="time-today">0hrs</p>
+              <p class="last-time">Last Week - <span id="last-study">1hrs</span></p>
+            </div>
+          </section>
+        </div>
+        <div class="card-4 card">
+          <!-- card banner-->
+          <section class="card-banner">
+           
+          </section>
+          <section class="info-card">
+            <div class="header-card">
+              <h2 class="title-card">Exercise</h2>
+              <button class="btn-card" id="btn-card-4">
+                <img class="icon-btn-card" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+              </button>
+            </div>
+            <div class="time-card">
+              <p id="time-exerc" class="time-today">1hr</p>
+              <p class="last-time">Last Week - <span id="last-exerc">2hrs</span></p>
+            </div>
+          </section>
+        </div>
+        <div class="card-5 card">
+          <!-- card banner-->
+          <section class="card-banner">
+           
+          </section>
+          <section class="info-card">
+            <div class="header-card">
+              <h2 class="title-card">Social</h2>
+              <button class="btn-card" id="btn-card-5">
+                <img class="icon-btn-card" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+              </button>
+            </div>
+            <div class="time-card">
+              <p id="time-social" class="time-today">1hr</p>
+              <p class="last-time">Last Week - <span id="last-social">3hrs</span></p>
+            </div>
+          </section>
+        </div>
+        <div class="card-6 card">
+          <!-- card banner-->
+          <section class="card-banner">
+           
+          </section>
+          <section class="info-card">
+            <div class="header-card">
+              <h2 class="title-card">Self Care</h2>
+              <button class="btn-card" id="btn-card-6">
+                <img class="icon-btn-card" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+              </button>
+            </div>
+            <div class="time-card">
+              <p id="time-self" class="time-today">0hrs</p>
+              <p class="last-time">Last Week - <span id="last-self">1hr</span></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/LucasOliveiraDantas" target="_blank">Lucas de Oliveira Dantas</a>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
